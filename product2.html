@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="filter.js" defer></script>
-    <script src="shopping.js" defer></script>
+
     <title>Document</title>
 </head>
 <body>
@@ -24,32 +24,35 @@
         </ul>
     </header>
     <main>
-        <section class="inputs">
-            <div>
-                <input id="Youtubers-checkbox" type="checkbox" class="filter"> 
-                <label class="label" for="checkbox-Youtubers">Youtubers</label>
+        <div class="dropdown">
+            <button class="dropbtn">prices↓</button>
+            <div class="dropdown-content">
+                <section class="inputs">
+                    <div>
+                        <input id="Youtubers-checkbox" type="checkbox" class="filter"> 
+                        <label class="label" for="checkbox-Youtubers">25-50</label>
+                    </div>
+                    
+                    <div>
+                        <input id="checkbox-TVShow" type="checkbox" class="filter">
+                        <label class="label" for="checkbox-TVShows">50-100</label>
+                        
+                    </div>
+                    <div>
+                        <input id="checkbox-Games" type="checkbox"  class="filter">
+                        <label class="label" for="checkbox-Games">100-150</label>
+                    </div>  
+                   </section>
             </div>
-            
-            <div>
-                <input id="checkbox-TVShow" type="checkbox" class="filter">
-                <label class="label" for="checkbox-TVShows">TVShows</label>
-                
-            </div>
-            <div>
-                <input id="checkbox-Games" type="checkbox"  class="filter">
-                <label class="label" for="checkbox-Games">Games</label>
-            </div>  
-           </section>
+          </div>
+       
     </main>
    
 
     <article class="modal a-popup" id="shoppingModal">
         &#10003;Added To Cart
     </article>
-   <a href="shopping.html"> <button id="checkout__button" class="shoppingCart"></a>
-        logo
-        <div class="shoppingCart__message">0</div>
-    </button>
+    
 
     <section >
         <ul class="product">
@@ -58,7 +61,7 @@
                     <img src="img/vannosgaming.webp" alt="vannosgaming Youtooz" class="product__img">
                 </figure>
                 <section class="product__body">
-                    <h2 class="product__h2">$760</h2>
+                    <h2 class="product__h2">$20</h2>
                     <h3 class="product__h3">vannosgaming - Youtube</h3>
                     <div class="product__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                    <a href="shopping.html"> <button data-product="van" id="js--amount-buzz" class="product__button shoppingModal">Add to cart</button></a>
@@ -69,7 +72,7 @@
                     <img src="img/pawnstars.webp" alt="Rick Harrison Youtooz" class="product__img">
                 </figure>
                 <section class="product__body">
-                    <h2 class="product__h2">$800</h2>
+                    <h2 class="product__h2">$76</h2>
                     <h3 class="product__h3">Rick Harrison - Pawn Stars</h3>
                     <div class="product__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                   <a href="shopping.html"> <button data-product="pawn" id="js--amount-iron" class="product__button shoppingModal">Add to cart</button></a> 
@@ -80,7 +83,7 @@
                     <img src="img/fnaffoxy_min-nk9f_x500.webp" alt="Foxy Five nights At Freddy Youtooz modal" class="product__img">
                 </figure>
                 <section class="product__body">
-                    <h2 class="product__h2">$800</h2>
+                    <h2 class="product__h2">$120</h2>
                     <h3 class="product__h3">Foxy - Five Nights At Freddy</h3>
                     <div class="product__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                    <a href="shopping.html"> <button data-product="fox" id="js--amount-c3po" class="product__button shoppingModal">Add to cart</button></a>
@@ -91,7 +94,7 @@
                     <img src="img/unspeakable.webp" alt="unspeakable Youtuber  Youtooz" class="product__img">
                 </figure>
                 <section class="product__body">
-                    <h2 class="product__h2">$800</h2>
+                    <h2 class="product__h2">$49</h2>
                     <h3 class="product__h3">unspeakable Youtuber</h3>
                     <div class="product__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                    <a href="shopping.html"> <button data-product="speak" class="product__button shoppingModal">Add to cart</button></a>
@@ -102,8 +105,8 @@
                     <img src="img/mcyt.webp" alt="unspeakable Youtuber  Youtooz" class="product__img">
                 </figure>
                 <section class="product__body">
-                    <h2 class="product__h2">$800</h2>
-                    <h3 class="product__h3">unspeakable Youtuber</h3>
+                    <h2 class="product__h2">$23</h2>
+                    <h3 class="product__h3">MCYT Youtuber</h3>
                     <div class="product__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <button class="product__button">Add to cart</button>
                 </section>
@@ -113,7 +116,7 @@
                     <img src="img/fnaf-chibi-chica_615x1000trim_min-fw6u_x500.webp" alt="chicka Five nights At Freddy Youtooz" class="product__img">
                 </figure>
                 <section class="product__body">
-                    <h2 class="product__h2">$800</h2>
+                    <h2 class="product__h2">$124</h2>
                     <h3 class="product__h3">chicka - Five Nights At Freddy</h3>
                     <div class="product__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <button class="product__button">Add to cart</button>
@@ -124,8 +127,8 @@
                     <img src="img/kenny.webp" alt="chicka Five nights At Freddy Youtooz" class="product__img">
                 </figure>
                 <section class="product__body">
-                    <h2 class="product__h2">$800</h2>
-                    <h3 class="product__h3">chicka - Five Nights At Freddy</h3>
+                    <h2 class="product__h2">$88</h2>
+                    <h3 class="product__h3">Kenny - South park</h3>
                     <div class="product__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <button class="product__button">Add to cart</button>
                 </section>
@@ -135,8 +138,8 @@
                     <img src="img/cartman.webp" alt="chicka Five nights At Freddy Youtooz" class="product__img">
                 </figure>
                 <section class="product__body">
-                    <h2 class="product__h2">$800</h2>
-                    <h3 class="product__h3">chicka - Five Nights At Freddy</h3>
+                    <h2 class="product__h2">$68</h2>
+                    <h3 class="product__h3">Cartman - South park</h3>
                     <div class="product__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <button class="product__button">Add to cart</button>
                 </section>
@@ -146,8 +149,8 @@
                     <img src="img/patrick.webp" alt="chicka Five nights At Freddy Youtooz" class="product__img">
                 </figure>
                 <section class="product__body">
-                    <h2 class="product__h2">$800</h2>
-                    <h3 class="product__h3">chicka - Five Nights At Freddy</h3>
+                    <h2 class="product__h2">$87</h2>
+                    <h3 class="product__h3">patrick - Spongebob</h3>
                     <div class="product__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <button class="product__button">Add to cart</button>
                 </section>
@@ -157,30 +160,30 @@
                     <img src="img/31flxye-q4l-ac-sr400400.webp" alt="chicka Five nights At Freddy Youtooz" class="product__img">
                 </figure>
                 <section class="product__body">
-                    <h2 class="product__h2">$800</h2>
-                    <h3 class="product__h3">chicka - Five Nights At Freddy</h3>
+                    <h2 class="product__h2">$99</h2>
+                    <h3 class="product__h3">doodlebob - spongebob</h3>
                     <div class="product__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <button class="product__button">Add to cart</button>
                 </section>
             </li>
-            <li class="products">
-                <figure  data-category="Games" class="product__figure">
+            <li  data-category="Games" class="products">
+                <figure  class="product__figure">
                     <img src="img/slime-plushie.webp" alt="chicka Five nights At Freddy Youtooz" class="product__img">
                 </figure>
                 <section class="product__body">
-                    <h2 class="product__h2">$800</h2>
-                    <h3 class="product__h3">chicka - Five Nights At Freddy</h3>
+                    <h2 class="product__h2">$134</h2>
+                    <h3 class="product__h3">slime-plush - slime rancher</h3>
                     <div class="product__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <button class="product__button">Add to cart</button>
                 </section>
             </li>
-            <li class="products">
-                <figure  data-category="Youtubers" class="product__figure">
+            <li data-category="Youtubers" class="products">
+                <figure   class="product__figure">
                     <img src="img/jacksepticeye.webp" alt="chicka Five nights At Freddy Youtooz" class="product__img">
                 </figure>
                 <section class="product__body">
-                    <h2 class="product__h2">$800</h2>
-                    <h3 class="product__h3">chicka - Five Nights At Freddy</h3>
+                    <h2 class="product__h2">$39</h2>
+                    <h3 class="product__h3">jacksepticeye - youtuber</h3>
                     <div class="product__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <button class="product__button">Add to cart</button>
                 </section>
