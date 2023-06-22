@@ -159,8 +159,13 @@ button{
 .Disctription-tekst{
     position: absolute;
     top: 15%;
-    left: 14%;
+    left: 5%;
     text-align: center;
+    
+}
+
+.groteheader-tekst>h2{
+    margin-left: 20rem;
 }
 
 
@@ -230,11 +235,15 @@ button{
 .header-button{
     opacity: 1;
     height: 5rem;
+    width: 10rem;
     position: absolute;
-    bottom: 8%;
-    left: 34%;
+    bottom: 5%;
+    left: 43%;
     border: 0.2rem solid #e6e6e6;
+    border-radius: 1rem;
     box-shadow:  0.1rem 0.1rem 0.1rem 0.1rem 0.2rem #e6e6e6;
+    background: none;
+    outline: none;
     
 }
 
@@ -431,7 +440,7 @@ li>button{
         height: 150vh;
         flex-wrap: wrap;
     }
-
+    
     .stappens{
         height: 70vh;
         margin: 0;
@@ -443,6 +452,8 @@ li>button{
         margin: 5rem;
         height: 20rem;
         width: 15rem;
+        margin-top: 15rem;
+        
        
     }
     .stap2{
@@ -462,12 +473,25 @@ li>button{
     }
 
     .stappen-----tekst{
-        font-size: 1rem;
+        font-size: 5rem;
     }
 
-    h5{
-        font-size: 0.5rem;
+    .stap1>p{
+        font-size: 1.5rem;
     }
+
+    .stap2>p{
+        font-size: 1.2rem;
+    }
+
+    .stap3>p{
+        font-size: 1.5rem;
+    }
+
+    .stap4>p{
+        font-size: 1.5rem;
+    }
+
 
     .bestelling{
         width: 10rem;
@@ -577,6 +601,14 @@ li>button{
         width: 59rem;
     }
 
+    .productennaam-button{}
+
+    .logo{
+        width: 15rem;
+        position: absolute;
+        left: 2%;
+    }
+
     .main2{
         height: 50rem;
         width: 59rem;
@@ -585,6 +617,20 @@ li>button{
 
     html{
         width: 40rem;
+    }
+
+    .review{
+        margin-top: 11rem;
+    }
+
+    footer{
+        width: 45rem;
+        position: relative;
+        
+    }
+    .footer-right{
+        position: absolute;
+        right: 2%;
     }
 }
 
@@ -603,6 +649,8 @@ li>button{
     border-radius: 50%;
     color: white;
     font-size: 100%;
+    text-align: center;
+    line-height: 8rem;
 }
 
 .shoppingCart:hover{
@@ -861,6 +909,11 @@ li>button{
 
 }
 
+.quote-beetle{
+    width: 40%;
+    height: 30%;
+}
+
 .stars{
     color: gold;
     position: absolute;
@@ -901,10 +954,12 @@ li>button{
 }
 
 
+
 .checkout{
     width: 70%;
     height: 80%;
     background: var(--game-background-color);
+    margin-left: 15rem;
 
 }
 
@@ -1070,24 +1125,96 @@ footer{
 .individueel{
     display: flex;
     height: 100rem;
-    background: #eee;
     margin: 5rem;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    background: #eee;
 }
 
 .individueel__image-blok{
     width: 50rem;
     height: 50rem;
-    background: blanchedalmond;
     margin: 4rem;
+    
 }
 
 .individueel__tekst{
+    
     width: 50rem;
     height: 50rem;
-    background: blanchedalmond;
+    border: 0.2rem solid black;
+    box-shadow:  0.1rem 0.1rem 0.1rem 0.1rem 0.2rem #e6e6e6;
     display: flex;
     margin: 4rem;
+    position: relative;
+    background: #eee;
+    margin-left: 8rem;
+    
+}
+
+.variatie-rondjes{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: -4rem;
+}
+
+.modal-titel{
+    
+}
+.modal-tekst{
+    font-size: 3rem;
+    border: 0.2rem solid black;
+    box-shadow:  0.1rem 0.1rem 0.1rem 0.1rem 0.2rem #e6e6e6;
+    
+}
+
+.individueel__image{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    width: 70%;
+    height: 70%;
+    transition: 0.2s;
+    
+}
+
+
+@media screen and (max-width:451px) {
+    .modal-titel{
+
+    }
+
+    .modal-tekst{
+        font-size: 2rem;
+    }
+
+    .rondjes{
+        width: 4rem;
+        height: 4rem;
+        
+    }
+
+    .individueel__tekst{
+        height: 35rem;
+        width: 100rem;
+    }
+}
+
+
+.rondjes{
+    width: 5rem;
+    height: 5rem;
+    background: blue;
+    border-radius: 50%;
+
+}
+
+.individueel__prijzen{
+    width: 60rem;
+    height:35rem;
+    background: #eee;
+    display: flex;
+    margin-left: 4rem;
     
 }
 
@@ -1147,6 +1274,14 @@ h5{
 
 .breakingbad--header-tekst{
     font-size: 2.5rem;
+}
+
+
+.functie-image-arthur{
+    width: 20rem;
+    position: absolute;
+    right: 20%;
+    top: 0;
 }
 
 

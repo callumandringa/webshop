@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="modal.js" defer></script>
     <title>Document</title>
 </head>
 <body> 
@@ -23,11 +24,27 @@
 
     <section class="individueel">
         <figure class="individueel__image-blok">
-            <img src="" alt="" class="individueel__image">
+            <img id="image-bigger" src="img/billie-648ad22e75428.webp" alt="" class="individueel__image">
         </figure>
         
-        <figure class="individueel__tekst"></figure>
-        <figure class="individueel__prijzen"></figure>
+        <figure class="individueel__tekst"> 
+            <h1 class="modal-titel">Test heading</h1>
+            <div class="variatie-rondjes">
+                <figure id="rondjes-medium" class="rondjes"></figure>
+                <figure id="rondjes-large" class="rondjes"></figure>
+                <figure id="rondjes-xxl" class="rondjes"></figure>  
+            </div>
+            <h2 class="product__h2">$20</h2>
+            <a href="shopping.html"  class="shoppingCart"> <div class="shoppingCart__message">0</div>  Logo </a>
+        </figure>
+        <figure class="individueel__prijzen">
+            <p class="modal-tekst">Billie Joe Armstrong is an American musician who is the lead vocalist,
+                 guitarist, and primary songwriter of the rock band Green Day, 
+                 which he co-founded with Mike Dirnt in 1987.
+                 <br>
+                 <br>
+                  Where we made a funk pop off so you and him can enjoy having him anywhere in your house</p>
+        </figure>
     </section>
 </body>
 </html>
