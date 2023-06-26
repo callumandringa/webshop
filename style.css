@@ -799,9 +799,11 @@ li>button{
     height: 50rem;
     width: 100%;
     position: relative;
-    background: green;
+    background: #eee;
 
 }
+
+
 
 
 .functie-tekst{
@@ -1113,6 +1115,7 @@ footer{
     position: absolute;
     top: 10%;
     right: 30%;
+    float: right;
 }
 
 .fig-left{
@@ -1156,11 +1159,11 @@ footer{
     display: flex;
     gap: 2rem;
     align-items: center;
-    margin: -4rem;
+    margin: -20rem;
 }
 
 .modal-titel{
-    
+    font-size: 3rem;
 }
 .modal-tekst{
     font-size: 3rem;
