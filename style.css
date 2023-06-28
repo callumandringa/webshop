@@ -1204,6 +1204,38 @@ footer{
 }
 
 
+@media screen and (max-width:1500px) {
+    .groot-img{
+        width: 30rem;
+        
+    }
+
+    .groot{
+        width: 20rem;
+        margin-left: 17rem;
+    }
+
+    .groteheader-tekst>h2{
+        font-size: 3rem;
+        margin-left: 25rem;
+    }
+    .Disctription-tekst{
+        font-size: 2rem;
+        margin-left: 13rem;
+    }
+    .YODA{
+        font-size: 2rem;
+        margin-left: 6rem;
+    }
+
+    .header-button{
+        width: 10rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+}
+
+
 .rondjes{
     width: 5rem;
     height: 5rem;
