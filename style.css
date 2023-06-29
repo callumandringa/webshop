@@ -194,7 +194,7 @@ button{
     grid-column: 2/7;
     border: 0.2rem solid #e6e6e6;
     box-shadow:  0.1rem 0.1rem 0.1rem 0.1rem 0.2rem #e6e6e6;
-    margin-left: -3.5rem;
+    
     margin-right: 1rem;
     position: relative;
    
@@ -397,14 +397,43 @@ li>button{
     left: 12%;
 }
 
+@media screen and (max-width:1301px) {
+    .productennaam1{
+        display: flex;
+        margin-right: 10rem;
+        
+    }
+}
+
+@media screen and (max-width:901px) {
+    .productennaam1{
+        display: flex;
+        margin-right: 15rem;
+        
+    }
+
+
+}
+
+
+@media screen and (max-width:801px) {
+    .productennaam{
+        height: 20rem;
+    }
+}
+
+
 
 @media screen and (max-width:451px) {
     .klein{
-        flex-wrap: wrap;
+       width: 30rem;
+        
+
+
     }
     .kleins1{
         height: 30rem;
-        width: 15rem;
+        width: 10rem;
     }
     .kleins1>img{
         width: 10rem;
@@ -436,96 +465,62 @@ li>button{
     }
 
     .stappen{
-        margin-top: 25rem;
-        height: 150vh;
+        
+        
         flex-wrap: wrap;
     }
     
     .stappens{
-        height: 70vh;
-        margin: 0;
-        padding: 0;
         position: relative;
+       width: 60rem;
+       flex-wrap: wrap;
         
     }
     .stap1{
-        margin: 5rem;
-        height: 20rem;
-        width: 15rem;
-        margin-top: 15rem;
+ 
+        height: 30rem;
+        width: 20rem;
+  
         
        
     }
     .stap2{
-        height: 20rem;
-        width: 15rem;
+  
+        height: 30rem;
+        width: 20rem;
+      
   
     }
     .stap3{
-        height: 20rem;
-        width: 15rem;
+        height: 30rem;
+        width: 20rem;
+       
   
     }
     .stap4{
-        height: 20rem;
-        width: 15rem;
+        height: 30rem;
+        width: 20rem;
+       
+  
      
     }
 
-    .stappen-----tekst{
-        font-size: 5rem;
+    .stap1>.stappen-----tekst{
+        font-size: 1.7rem;
     }
-
-    .stap1>p{
+    .stap2>.stappen-----tekst{
+        font-size: 1.4rem;
+    }
+    .stap3>.stappen-----tekst{
+        font-size: 1.7rem;
+    }
+    .stap4>.stappen-----tekst{
         font-size: 1.5rem;
     }
-
-    .stap2>p{
-        font-size: 1.2rem;
-    }
-
-    .stap3>p{
-        font-size: 1.5rem;
-    }
-
-    .stap4>p{
-        font-size: 1.5rem;
-    }
-
 
     .bestelling{
-        width: 10rem;
-        height:10rem ;
-        position: absolute;
-        left: 12%;
+        left: 3%;
     }
-    
-    .basket{
-        width: 10rem;
-        height: 10rem;
-        position: absolute;
-        left: 12%;
-    }
-    
-    .budget{
-        width: 10rem;
-        height: 10rem;
-        position: absolute;
-        left: 12%;
-    }
-    
-    .bus{
-        width: 10rem;
-        height: 10rem;
-        position: absolute;
-        left: 12%;
-    }
-
-    .stappens{
-        flex-wrap: wrap;
-        margin-top: 5rem;
-    }
-
     
 
 
@@ -533,7 +528,7 @@ li>button{
         font-size: 2rem;
     }
     .header-button{
-        left: 3%;
+        left: 40%;
     }
     .functie{
     display: flex;
@@ -624,7 +619,7 @@ li>button{
     }
 
     footer{
-        width: 45rem;
+        width: 60rem;
         position: relative;
         
     }
@@ -632,6 +627,90 @@ li>button{
         position: absolute;
         right: 2%;
     }
+
+}
+
+
+@media screen and (max-width:751px) {
+        .functie{
+            display: none;
+        }
+
+        .bestelling{
+            scale: 0.4;
+            left: -10%;
+            top: -20%;
+        }
+        .basket{
+            scale: 0.4;
+            left: -10%;
+            top: -20%;
+        }
+        .budget{
+            scale: 0.4;
+            left: -10%;
+            top: -20%;
+        }
+    
+        .bus{
+            scale: 0.4;
+            left: -10%;
+            top: -20%;
+        }
+
+        .stappens{
+            position: relative;
+           width: 60rem;
+           flex-wrap: wrap;
+            
+        }
+        .stap1{
+     
+            height: 30rem;
+            width: 20rem;
+      
+            
+           
+        }
+        .stap2{
+      
+            height: 30rem;
+            width: 20rem;
+          
+      
+        }
+        .stap3{
+            height: 30rem;
+            width: 20rem;
+           
+      
+        }
+        .stap4{
+            height: 30rem;
+            width: 20rem;
+           
+      
+         
+        }
+    
+        .stap1>.stappen-----tekst{
+            font-size: 1.7rem;
+        }
+        .stap2>.stappen-----tekst{
+            font-size: 1.4rem;
+        }
+        .stap3>.stappen-----tekst{
+            font-size: 1.7rem;
+        }
+        .stap4>.stappen-----tekst{
+            font-size: 1.5rem;
+        }
+
+
+        .reviews{
+            margin-top: 5rem;
+        }
+        
 }
 
 
@@ -1203,6 +1282,41 @@ footer{
     }
 }
 
+@media screen and (max-width:600px) {
+    .functie-image-arthur{
+        scale: 0.5;
+    }
+
+    .functie-tekst>h5{
+        font-size: 1rem;
+    }
+
+    .bestelling{
+        scale: 0.5;
+    }
+
+    .tekst-slogan{
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+
+    .stappen-----tekst{
+        font-size: 0.1rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .functie-image-arthur{
+        scale: 0.5;
+        
+    }
+
+    .functie-tekst>h5{
+        font-size: 1rem;
+    }
+
+}
+
 
 @media screen and (max-width:1500px) {
     .groot-img{
@@ -1210,11 +1324,7 @@ footer{
         
     }
 
-    .groot{
-        width: 20rem;
-        margin-left: 17rem;
-    }
-
+ 
     .groteheader-tekst>h2{
         font-size: 3rem;
         margin-left: 25rem;
@@ -1233,6 +1343,161 @@ footer{
         height: 2rem;
         font-size: 1rem;
     }
+
+    .Kleins-img{
+        scale: 0.5;
+    }
+
+    .bestelling{
+        scale: 0.5;
+
+    }
+    .basket{
+        scale: 0.5;
+    }
+    .budget{
+        scale: 0.5;
+    }
+
+    .bus{
+        scale: 0.5;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    .groteheader-tekst>h2{
+        margin-left: 19rem;
+    }
+
+    .Disctription-tekst{
+        margin-left: 7rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .bestelling{
+        scale: 0.4;
+        left: -10%;
+    }
+    .basket{
+        scale: 0.4;
+        left: -10%;
+    }
+    .budget{
+        scale: 0.4;
+        left: -10%;
+    }
+
+    .bus{
+        scale: 0.4;
+        left: -10%;
+    }
+
+    .Disctription-button{
+        margin-bottom: 1rem;
+    }
+    .kleins1>h5{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-top: -4rem;
+    }
+  .kleins2>h5{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-top: -4rem;
+    }
+    .kleins3>h5{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-top: -4rem;
+    }
+    .kleins4>h5{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-top: -4rem;
+    }
+
+    .kleins1{
+        height: 70%;
+    }
+    .kleins2{
+        height: 70%;
+    }
+    .kleins3{
+        height: 70%;
+    }
+    .kleins4{
+        height: 70%;
+    }  
+}
+
+
+@media screen and (max-width:900px) {
+    .bestelling{
+        scale: 0.4;
+        left: -25%;
+    }
+    .basket{
+        scale: 0.4;
+        left: -25%;
+    }
+    .budget{
+        scale: 0.4;
+        left: -25%;
+    }
+
+    .bus{
+        scale: 0.4;
+        left: -25%;
+    }
+    .stap1>p{
+        font-size:2rem ;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .Disctription-button{
+        margin-bottom: 1rem;
+    }
+    .kleins1>h5{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-top: -1.5rem;
+    }
+  .kleins2>h5{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-top: -1.5rem;
+    }
+    .kleins3>h5{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-top: -1.5rem;
+    }
+    .kleins4>h5{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-top: -1.5rem;
+    }
+
+    .kleins1{
+        height: 70%;
+        width: 190%;
+    }
+    .kleins2{
+        height: 70%;
+        width: 190%;
+    }
+    .kleins3{
+        height: 70%;
+        width: 190%;
+    }
+    .kleins4{
+        height: 70%;
+        width: 190%;
+    } 
 }
 
 
