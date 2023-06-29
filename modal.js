@@ -18,4 +18,4 @@ large.onclick = function(){
 xxl.onclick = function(){
     image.style.scale = "1.3"
 
-}
+};
