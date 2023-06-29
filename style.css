@@ -109,21 +109,21 @@ button{
 .modal{
     width: 50rem;
     height: 30rem;
-    background: red;
-    position: fixed;
-    top: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: #f6f6f6;
-    box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.3);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20%;
+    box-shadow: 0 0 5rem 0 rgb(0, 0, 0, 0.3);
     color: green;
     font-size: 130%;
     font-weight: 400;
     border-radius: 0.5rem;
     display: none;
+    z-index: 1;
+    margin-left: 30%;
 }
-
 
 @media screen and (max-width: 45rem) {
     .productennaam-button{
@@ -317,7 +317,7 @@ li>button{
 
 
 .stappens{
-
+    
     padding: 2rem;
     display:flex;
     gap:2rem;
@@ -330,7 +330,7 @@ li>button{
 .stap1{
     border: 0.2rem solid #e6e6e6;
     box-shadow:  0.1rem 0.1rem 0.1rem 0.1rem 0.2rem #e6e6e6;
-    width:40rem;
+    width:35rem;
     height:50vh;
     display: flex;
     position: relative;
@@ -338,7 +338,7 @@ li>button{
 
 
 .stap2{
-    width:40rem;
+    width:35rem;
     height:50vh;
     border: 0.2rem solid #e6e6e6;
     box-shadow:  0.1rem 0.1rem 0.1rem 0.1rem 0.2rem #e6e6e6;
@@ -347,7 +347,7 @@ li>button{
 }
 
 .stap3{
-    width:40rem;
+    width:35rem;
     height:50vh;
     border: 0.2rem solid #e6e6e6;
     box-shadow:  0.1rem 0.1rem 0.1rem 0.1rem 0.2rem #e6e6e6;
@@ -356,7 +356,7 @@ li>button{
 }
 
 .stap4{
-    width:40rem;
+    width:35rem;
     height:50vh;
     border: 0.2rem solid #e6e6e6;
     box-shadow:  0.1rem 0.1rem 0.1rem 0.1rem 0.2rem #e6e6e6;
@@ -886,6 +886,20 @@ li>button{
     padding: 1rem ;
 }
 
+.product__button2{
+    width: 20rem;
+    border: none;
+    font-size: 90%;
+    font-family: 'lato',sans-serif;
+    color: green;
+    background: transparent;
+    padding: 1rem ;
+    bottom: 1%;
+    font-size: 3rem;
+    position: absolute;
+}
+
+
 
 
 .functie{
@@ -1224,7 +1238,7 @@ footer{
     margin: 5rem;
     justify-content: flex-start;
     flex-wrap: wrap;
-    background: #eee;
+  
 }
 
 .individueel__image-blok{
@@ -1235,7 +1249,7 @@ footer{
 }
 
 .individueel__tekst{
-    
+    background: none;
     width: 50rem;
     height: 50rem;
     border: 0.2rem solid black;
@@ -1243,7 +1257,7 @@ footer{
     display: flex;
     margin: 4rem;
     position: relative;
-    background: #eee;
+
     margin-left: 8rem;
     
 }
@@ -1253,6 +1267,7 @@ footer{
     gap: 2rem;
     align-items: center;
     margin: -20rem;
+    justify-content:center ;  
 }
 
 .modal-titel{
@@ -1263,6 +1278,24 @@ footer{
     border: 0.2rem solid black;
     box-shadow:  0.1rem 0.1rem 0.1rem 0.1rem 0.2rem #e6e6e6;
     
+}
+
+.a-popup{
+    animation-name: popup;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popup {
+    from{
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .individueel__image{
@@ -1520,6 +1553,11 @@ footer{
     height: 5rem;
     background: blue;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.7rem;
 
 }
 

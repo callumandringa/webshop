@@ -120,24 +120,6 @@ game.onchange = function(){
         } 
     }
     
-    const checkoutButton = document.getElementById("checkout__button");
-    const checkoutWindow = document.getElementById("js--checkoutWindow")
-    let checkoutIsOpen = false;
-    
-    checkoutButton.onclick = function(){
-        if(checkoutIsOpen === false){
-            document.querySelector("main").style.display = "none";
-            checkoutWindow.style.display = "block";
-            checkoutIsOpen = true;
-            document.getElementById("js--amount-buzz").innerHTML = buzz + "x";
-            document.getElementById("js--amount-ironman").innerHTML = iron + "x";
-            document.getElementById("js--amount-c3po").innerHTML = c3po + "x";
-            return;
-        }
-        document.querySelector("main").style.display = "block";
-        checkoutWindow.style.display = "none";
-        checkoutIsOpen = false;
-    }
-    
+
     
     
