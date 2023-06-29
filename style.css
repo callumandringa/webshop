@@ -256,7 +256,7 @@ button{
 }
 
 .klein{
-    height: 70vh;
+
     padding: 2rem;
     display:flex;
     gap:2rem;
@@ -269,29 +269,24 @@ button{
 .kleins1{
     border: 0.2rem solid #e6e6e6;
     box-shadow:  0.1rem 0.1rem 0.1rem 0.1rem 0.2rem #e6e6e6;
-    width:40rem;
-    height:70vh;
 
 }
 
 
 .kleins2{
-    width:40rem;
-    height:70vh;
+   
     border: 0.2rem solid #e6e6e6;
     box-shadow:  0.1rem 0.1rem 0.1rem 0.1rem 0.2rem #e6e6e6;
 }
 
 .kleins3{
-    width:40rem;
-    height:70vh;
+  
     border: 0.2rem solid #e6e6e6;
     box-shadow:  0.1rem 0.1rem 0.1rem 0.1rem 0.2rem #e6e6e6;
 }
 
 .kleins4{
-    width:40rem;
-    height:70vh;
+   
     border: 0.2rem solid #e6e6e6;
     box-shadow:  0.1rem 0.1rem 0.1rem 0.1rem 0.2rem #e6e6e6;
 
@@ -322,13 +317,13 @@ li>button{
 
 
 .stappens{
-    height: 70vh;
+
     padding: 2rem;
     display:flex;
     gap:2rem;
     justify-content: center;
     align-items: center;
-
+    flex-wrap: wrap;
 
 }
 
@@ -397,6 +392,13 @@ li>button{
     left: 12%;
 }
 
+
+@media screen and (max-width:1701px) {
+        .functie{
+            margin-top: 30rem;
+        }
+}
+
 @media screen and (max-width:1301px) {
     .productennaam1{
         display: flex;
@@ -427,7 +429,7 @@ li>button{
 @media screen and (max-width:451px) {
     .klein{
        width: 30rem;
-        
+    flex-wrap: wrap;
 
 
     }
@@ -474,6 +476,8 @@ li>button{
         position: relative;
        width: 60rem;
        flex-wrap: wrap;
+       margin-top: 20rem;
+       margin-left: -7rem;
         
     }
     .stap1{
@@ -628,6 +632,16 @@ li>button{
         right: 2%;
     }
 
+}
+
+@media screen and (max-width:860px) {
+    .functie{
+        display: none;
+    }
+
+    .reviews{
+        margin-top: 80rem;
+    }
 }
 
 
@@ -804,7 +818,7 @@ li>button{
 }
 
 .product{
-    height: 140vh;
+    height: 230vh;
     
     padding: 2rem;
 
